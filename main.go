@@ -6,6 +6,10 @@ import (
 )
 
 func main() {
+<<<<<<< HEAD
+	fmt.Println("Welcome to Group A's Week 4 Project!")
+	Diamond()
+=======
 	fmt.Println("\nWelcome to Group F's Week 4 Project!")
 
 	for {
@@ -56,4 +60,5 @@ func main() {
 		}
 	}
 
+>>>>>>> daeead6f4e8dd90afd4e73909adbe5e9e1d70d58
 }
