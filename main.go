@@ -1,15 +1,13 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"os"
 )
 
 func main() {
-<<<<<<< HEAD
-	fmt.Println("Welcome to Group A's Week 4 Project!")
-	Diamond()
-=======
+
 	fmt.Println("\nWelcome to Group F's Week 4 Project!")
 
 	for {
@@ -18,8 +16,9 @@ func main() {
 		fmt.Println("1. Fibonacci Series")
 		fmt.Println("2. Palindrome")
 		fmt.Println("3. Diamond Pattern")
-		fmt.Println("4. Diamond Pattern")
-		fmt.Println("5. Exit")
+		fmt.Println("4. Reverse String")
+		fmt.Println("5. table")
+		fmt.Println("6. Exit")
 
 		fmt.Print("\nEnter Your Choice: ")
 		fmt.Scan(&choice)
@@ -45,20 +44,32 @@ func main() {
 			} else {
 				fmt.Println("\nThe number is not a palindrome.")
 			}
+
 		case 3:
+			Diamond()
+
+		case 4:
+			fmt.Print("Enter String to Reverse: ")
+			reader := bufio.NewReader(os.Stdin)
+			input, _ := reader.ReadString('\r')
+			rev := reverseString(input)
+			//reversed := reverseString("Hello World How are you")
+			fmt.Println("Original - Reversed ", input)
+			fmt.Println(rev)
+
+		case 5:
 			var input int
 			fmt.Print("Enter a number: ")
 			fmt.Scan(&input)
 			Table(input)
 
-		case 5:
+		case 6:
 			os.Exit(0)
 
 		default:
-			fmt.Println("\nPlease try again by selecting a value between 1 and 5")
+			fmt.Println("\nPlease try again by selecting a value between 1 and 6")
 
 		}
 	}
 
->>>>>>> daeead6f4e8dd90afd4e73909adbe5e9e1d70d58
 }
