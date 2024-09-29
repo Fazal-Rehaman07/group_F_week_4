@@ -41,6 +41,11 @@ func main() {
 			} else {
 				fmt.Println("\nThe number is not a palindrome.")
 			}
+		case 3:
+			var input int
+			fmt.Print("Enter a number: ")
+			fmt.Scan(&input)
+			Table(input)
 
 		case 5:
 			os.Exit(0)
