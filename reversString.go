@@ -11,7 +11,7 @@ func reverseString(s string) string {
 }
 
 func main() {
-    fmt.Println("Welcome to Group A's Week 4 Project!")
+    fmt.Println("Welcome to Group F's Week 4 Project!")
 
     original := "Hello, Go!"
     reversed := reverseString(original)
