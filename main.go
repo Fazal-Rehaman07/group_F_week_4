@@ -17,8 +17,9 @@ func main() {
 		fmt.Println("2. Palindrome")
 		fmt.Println("3. Diamond Pattern")
 		fmt.Println("4. Reverse String")
-		fmt.Println("5. table")
-		fmt.Println("6. Exit")
+		fmt.Println("5. Table")
+		fmt.Println("6. Decimal to Binary")
+		fmt.Println("7. Exit")
 
 		fmt.Print("\nEnter Your Choice: ")
 		fmt.Scan(&choice)
@@ -64,10 +65,18 @@ func main() {
 			Table(input)
 
 		case 6:
+			var decimal int
+			fmt.Print("Enter a decimal number: ")
+			fmt.Scan(&decimal)
+
+			binary := decimalToBinary(decimal)
+			fmt.Printf("Binary representation: %s\n", binary)
+
+		case 7:
 			os.Exit(0)
 
 		default:
-			fmt.Println("\nPlease try again by selecting a value between 1 and 6")
+			fmt.Println("\n Please try again by selecting a value between 1 and 7")
 
 		}
 	}
