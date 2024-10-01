@@ -10,7 +10,8 @@ func main() {
 
 	fmt.Println("\nWelcome to Group F's Week 4 Project!")
 
-	for {
+//Run the Main Menu in infinite loop
+	for { 
 		var choice int
 		fmt.Println("\n\nSelect the Function to Run")
 		fmt.Println("1. Fibonacci Series")
@@ -24,6 +25,7 @@ func main() {
 		fmt.Print("\nEnter Your Choice: ")
 		fmt.Scan(&choice)
 
+//Each case in Switch block corresponds to the function to be called which is selected in the main menu
 		switch choice {
 		case 1:
 			var n int
